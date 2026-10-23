@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — TradeTech Solutions</title>
+    <meta name="description" content="Свяжитесь с нами — получите демо системы автоматизации учёта продаж">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">
+                <span class="logo__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                </span>
+                TradeTech
+            </a>
+            <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" id="nav">
+                <a href="index.html" class="nav__link">Главная</a>
+                <a href="about.html" class="nav__link">О нас</a>
+                <a href="contacts.html" class="nav__link nav__link--active">Контакты</a>
+                <a href="#demo-form" class="nav__cta">Получить демо</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ИНТРО + ФОРМА -->
+        <section class="cta-section" id="demo-form">
+            <div class="container">
+                <header class="cta-section__head">
+                    <h1 class="cta-section__title">Начните автоматизацию уже сегодня</h1>
+                    <p class="cta-section__subtitle">Оставьте заявку, и наш специалист свяжется с вами для демонстрации системы</p>
+                </header>
+                <form class="form" id="demoForm" novalidate>
+                    <h2 class="form__title">Получить демо-доступ</h2>
+                    <div class="form__field">
+                        <label for="name" class="form__label">Ваше имя <span class="req">*</span></label>
+                        <input type="text" id="name" name="name" class="form__input" placeholder="Иван Иванов" required>
+                        <span class="form__error" data-for="name"></span>
+                    </div>
+                    <div class="form__field">
+                        <label for="email" class="form__label">Email <span class="req">*</span></label>
+                        <input type="email" id="email" name="email" class="form__input" placeholder="ivan@glinic.ru" required>
+                        <span class="form__error" data-for="email"></span>
+                    </div>
+                    <div class="form__field">
+                        <label for="phone" class="form__label">Телефон <span class="req">*</span></label>
+                        <input type="tel" id="phone" name="phone" class="form__input" placeholder="+7 (999) 123-45-67" required>
+                        <span class="form__error" data-for="phone"></span>
+                    </div>
+                    <div class="form__field">
+                        <label for="message" class="form__label">Сообщение</label>
+                        <textarea id="message" name="message" class="form__input form__input--textarea" placeholder="Расскажите о вашей компании и требованиях..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--submit">Отправить заявку <span aria-hidden="true">→</span></button>
+                    <p class="form__success" id="formSuccess" hidden>Заявка отправлена! Мы свяжемся с вами в течение часа.</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- КОНТАКТЫ -->
+        <section class="contacts">
+            <div class="container">
+                <header class="contacts__head">
+                    <h2 class="contacts__title">Свяжитесь с нами</h2>
+                    <p class="contacts__subtitle">Мы готовы ответить на все ваши вопросы и помочь выбрать оптимальное решение для вашего бизнеса.</p>
+                </header>
+                <div class="contacts__list">
+                    <article class="contact-item">
+                        <div class="contact-item__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div class="contact-item__body">
+                            <h3 class="contact-item__title">Телефон</h3>
+                            <a href="tel:+78001234567" class="contact-item__value">+7 (800) 123-45-67</a>
+                            <p class="contact-item__note">Бесплатно по России</p>
+                        </div>
+                    </article>
+                    <article class="contact-item">
+                        <div class="contact-item__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div class="contact-item__body">
+                            <h3 class="contact-item__title">Email</h3>
+                            <a href="mailto:info@tradetech.ru" class="contact-item__value">info@tradetech.ru</a>
+                            <p class="contact-item__note">Ответим в течение 1 часа</p>
+                        </div>
+                    </article>
+                    <article class="contact-item">
+                        <div class="contact-item__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div class="contact-item__body">
+                            <h3 class="contact-item__title">Офис</h3>
+                            <p class="contact-item__value">г. Москва, ул. Складчикова, д. 10</p>
+                            <p class="contact-item__note">Бизнес-центр «ОптРоз», офис 301</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__copy">&copy; 2026 TradeTech Solutions. Система автоматизации учёта оптовых и розничных продаж.</p>
+            <nav class="footer__nav">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О нас</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
